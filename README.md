@@ -7,13 +7,24 @@ Make sure to have python and pip installed on your machine
 
 ## Install & Setup
 
-    Download the code from the git repository
-    Install dependencies: pip install requirements.txt
+Download the code from the git repository
+
+Install dependencies
+    
+```bash
+pip install -r requirements.txt
+```
 
 ## Run the app
 
-    uvicorn main:app --reload
-    access http://127.0.0.1:8000/
+```bash
+uvicorn main:app --reload
+```
+
+Go to
+```bash
+http://127.0.0.1:8000/
+```
 
 # REST API
 
