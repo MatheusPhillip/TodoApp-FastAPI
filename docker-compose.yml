@@ -1,0 +1,22 @@
+services:
+  db:
+    image: postgres
+    restart: always
+    container_name: todoapp-postgres-db
+    environment:
+      POSTGRES_USER: phillip
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: todoapp-db
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5000:5432"
+ 
+  # adminer:
+  #   image: adminer
+  #   restart: always
+  #   ports:
+  #     - 8080:8080
+ 
+volumes:
+  pgdata:
