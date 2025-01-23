@@ -10003,6 +10003,7 @@ a.text-dark:hover, a.text-dark:focus {
     min-width: 992px !important;
   }
   .container {
+    margin-top: 1rem;
     min-width: 992px !important;
   }
   .navbar {
